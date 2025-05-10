@@ -27,7 +27,7 @@ def generate_logs():
             log_file.write(log_entry)
 
         print(f"Generated log: {log_entry.strip()}")
-        time.sleep(20)  # Sleep for 5 seconds before next log
+        time.sleep(5)  # Sleep for 5 seconds before next log
 
 if __name__ == "__main__":
     generate_logs()

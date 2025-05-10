@@ -5,6 +5,8 @@ import asyncio
 import aiofiles
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.websockets import WebSocketState
+
 
 from app.log_manager import LOG_FILE_PATH  # get constant path from one place
 from app.log_manager import LogManager

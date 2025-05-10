@@ -21,3 +21,12 @@ def start_monitoring():
     t = threading.Thread(target=monitor_logs)
     t.daemon = True
     t.start()
+
+def read_new_lines(file_obj):
+    lines = []
+    while True:
+        line = file_obj.readline()
+        if not line:
+            break
+        lines.append(line)
+    return lines

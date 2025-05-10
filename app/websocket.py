@@ -2,6 +2,7 @@ import asyncio
 import os
 from fastapi import WebSocket
 from app.log_manager import LogManager
+from typing import List
 
 
 # app/websocket.py
